@@ -19,4 +19,10 @@ class VigenereTest {
     assertEquals("LAVIERGEAUXROCHERS", Vigenere.decode("WOPDVVRSUPOVZQBZIW", "LOUVRE"));
   }
 
+  @Test
+  def decode3() {
+    assertEquals("LADAMEALHERMINE", Vigenere.decode("DFXMMXODMYDMBBW", "SFUMATO"));
+  }
+
+
 }
