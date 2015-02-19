@@ -5,6 +5,8 @@ package codes
  */
 object Caesar {
 
+    // could be VariableCaesar.encode(_, 3)
+
   private def modulo(x: Int): Int = {
     val a = x % 26
     if (a < 0) a + 26
@@ -26,4 +28,6 @@ object Caesar {
         case _ => ('A' + modulo(x - 'A' - 3)).toChar
       }
     }
+  
+  
 }
